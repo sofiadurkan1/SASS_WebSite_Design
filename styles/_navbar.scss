@@ -45,7 +45,19 @@
 
         @include tablet{
             display:none;
-            
+
+        }
+        &--links{
+            color:$dark;
+            @extend %align-center;
+            justify-content:center;
+            text-decoration: none;
+            padding: 0 1rem;
+
+            &:hover{
+                color:$lime;
+                transition: all 0.3s ease;
+            }
         }
     }
 

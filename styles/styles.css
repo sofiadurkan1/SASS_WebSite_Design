@@ -1,4 +1,4 @@
-.navbar__logo, .navbar__menu {
+.navbar__logo, .navbar__menu, .navbar__menu--links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +54,21 @@
   .navbar__menu {
     display: none;
   }
+}
+
+.navbar__menu--links {
+  color: #222121;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.navbar__menu--links:hover {
+  color: #00cc66;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 * {
