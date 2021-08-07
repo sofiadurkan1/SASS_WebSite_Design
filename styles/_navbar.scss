@@ -1,0 +1,54 @@
+@import 'colors','media-queries';
+
+%align-center{
+    display:flex;
+    align-items:center;
+}
+
+
+.navbar{
+    background: $light;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding:0.5rem calc((100vw-1200px)/2);
+    z-index: 10;
+    position: relative;
+
+
+    &__logo{
+        color:$dark;
+        cursor: pointer;
+        text-decoration: none;
+        font-size:2rem;
+        margin-left: 24px;
+        @extend %align-center;
+
+    }
+    &__bars {
+        opacity: 0;
+        @include tablet {
+            color: $dark;
+            opacity: 1;
+            position: absolute;
+            top:22px;
+            right: 20px;
+            font-size:2rem;
+
+        }
+    }
+    &__menu{
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+
+        @include tablet{
+            display:none;
+            
+        }
+    }
+
+}
+
+
